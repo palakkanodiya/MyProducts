@@ -1,0 +1,14 @@
+
+
+<h2>Buyer: {{ buyer.name }}</h2>
+
+<h3>Products:</h3>
+<ul>
+    {% for product in products %}
+        <li>🛒{{ product.product_name }}</li>
+        <li>💵{{ product.product_price}}</li>
+       
+    {% empty %}
+        <li>No products found.</li>
+    {% endfor %}
+</ul>
